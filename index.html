@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dribble.css">
+  <title> Dribble</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#">
+        <h4>dribbble </h4>
+      </a>
+
+      <!-- <li class="nav-item"> -->
+      <a class="nav-link sign " href="#" style="margin-right: 8px;">Sign in</a>
+      <!-- </li> -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="box-shadow: none; border: none;width: 80px; margin-top: -35px;">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <div class="input-icons resp-srch">
+            <i class="fa fa-search icon"></i>
+            <input class="input-field" type="text" placeholder="search" name="srch">
+          </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Inspiration
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-table-cells-large"
+                    style="color: blueviolet;"></i>Explore Design Work</a></li>
+              <p>Treanding designes to inspire you</p>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart" style=" color: #ea4c89;"></i>NEW &
+                  Noteworthy</a></li>
+              <p>Up-and-coming designers</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy"
+                    style="color:forestgreen;"></i>Playoffs</a></li>
+              <p>Work designers are riffing on</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-square" style="color: yellow;"></i>Blog</a>
+              </li>
+              <p>Interview,tutorials, and more</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-briefcase" style="color:darkviolet;"></i>
+                  Weekly Warm Up</a></li>
+              <p>Prompt to flex your design skills</p>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Find Work
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-globe" style="color:darkorchid;"></i>Job
+                  Board</a></li>
+              <p>Find your dream design job </p>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mug-hot" style="color: #ea4c89;"></i>Freelance
+                  Project <span class="badge 
+                ">pro+</span> </a></li>
+              <p>An exclusive list for contract work</p>
+              <hr>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope" style="color:aquamarine;"></i>Want
+                  freelance design projects?</a></li>
+              <p>Get new leads in your inbox every day</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mobile"
+                    style="color:darkgoldenrod;"></i>Personalize your profile with video </a></li>
+              <p>Introduce yourself to new clients with pitch </p>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Learn Design
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pencil"
+                    style="color:mediumpurple;"></i>Certified Product Design Course </a></li>
+              <p>Learn product design in just 16 weeks..</p>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-desktop"
+                    style="color: #ea4c89;"></i>Introduction to UI Design </a></li>
+              <p>Learn Ui design basics and figma <br>Fundamentals...</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gears" style="color:aqua;"></i>
+                  Design Systems Course </a></li>
+              <p>Scale design system in 8 weeks..</p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-virus" style="color:darkgoldenrod;"></i>Design
+                  Career Prep Course </a></li>
+              <p>Land your dream job! <br>Support specialist to review </p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-video" style="color: mediumpurple;"></i>Browse
+                  our Courses & Workshops </a></li>
+              <p>Level up your skills with our interactive <br>courses and workshops..</p>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Go Pro
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-yen-sign" style="color: blueviolet;"></i>
+                  For Designers </a></li>
+              <p>Portfolio creation made easy </p>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen" style="color: #ea4c89;"></i>For
+                  Freelancers </a></li>
+              <p>Fresh leads in your inbox every day</p>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group" style="color: aquamarine;"></i>For
+                  Teams </a></li>
+              <p>Build your team's pipeline or profile </p>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Hire Designers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear" style="color: blueviolet;"></i>Designer
+                  Search </a></li>
+              <p>Find,contact,and hire designers </p>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus" style="color: #ea4c89;"></i>List my job
+                  Opening </a></li>
+              <p>The #1 job board for creative </p>
+
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus" style="color: aquamarine;"></i>Post a
+                  Freelance Project </a></li>
+              <p>Board for freelance & contract work </p>
+            </ul>
+          </li>
+
+        </ul>
+
+        <i class="fa-solid fa-magnifying-glass text-secondary iconhide"></i>
+        <ul class="navbar-nav mb-2  mb-lg-0 nav justify-content-end ">
+
+          <li class="nav-item hidetb">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+        </ul>
+        <button class="btn-btn hidebtn " type="submit">Sign up</button>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="bg-video">
+
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+
+      <source src="assests/background video.mp4" type="video/mp4">
+    </video>
+
+
+
+    <div class="viewport ">
+      <div class="btn-scroll">
+        <button type="button" class="btn bg-white text-dark">Discover</button>
+        <button type="button" class="btn">Animation</button>
+        <button type="button" class="btn">Branding</button>
+        <button type="button" class="btn">Illustration</button>
+        <button type="button" class="btn">Mobile</button>
+        <button type="button" class="btn">Print</button>
+        <button type="button" class="btn">Product Design</button>
+        <button type="button" class="btn">Typography</button>
+        <button type="button" class="btn">Web Design</button>
+      </div>
+    </div>
+
+
+
+    <div class="content">
+      <h2>Explore the world’s leading <br> design portfolios</h2>
+
+      <p>Millions of designers and agencies around the world showcase their portfolio work <br> on Dribbble - the home
+        to
+        the world’s best design and creative professionals.</p>
+
+
+
+
+      <div class="input-icons">
+        <i class="fa fa-search icon"></i>
+        <input class="input-field" type="text" placeholder="search" name="srch">
+      </div>
+    </div>
+
+
+    <div class="lastbtn " >
+      <button type="button" class="btn btn-res btn-default"> Trending searches</button>
+      <button type="button" class="btn btn-default">landing page</button>
+      <button type="button" class="btn btn-default">ios</button>
+      <button type="button" class="btn btn-default">food</button>
+      <button type="button" class="btn btn-default">landingpage</button>
+      <button type="button" class="btn btn-default">uxdesign</button>
+      <button type="button" class="btn btn-default">app design</button>
+    </div>
+
+
+
+    <a href="#"> @glebich </a>
+
+
+
+  </div>
+
+
+  <!-- Large button groups (default and split) -->
+  <div class="container">
+    <div class="btn-group">
+      <button class="btn  btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Popular
+      </button>
+      <ul class="dropdown-menu">
+        <li style="color: hotpink;">Popular</li>
+        <li>New & Noteworthy</li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li>Marketplace</li>
+      </ul>
+    </div>
+
+    <!-- filter button right side -->
+    <div class="dropdown">
+      <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa-solid fa-bars"></i> Filters
+        <span class="caret"></span></button>
+
+
+
+      <ul class="dropdown-menu" id="drop">
+
+        <div class="drop">
+          <form>
+            <label for="search">Tags</label>
+            <!-- <img src="assests/search-icon-.png" alt=""> -->
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="" name="srch">
+
+            <label for="color" class="mb-2 mr-sm-2">Color</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter hex or select" name="color">
+
+
+
+            <!-- <div class="time"> -->
+            <label for="cars" style="margin-left: 20px;">Timeframe</label>
+            <select name="cars" id="cars">
+
+              <option value="volvo">Now</option>
+              <option value="saab">This Past Week</option>
+              <option value="opel">This past Month</option>
+              <option value="audi">This Past Year</option>
+              <option value="audi">All Time</option>
+
+            </select>
+
+
+            <label for="bike" style="margin-left: 20px;">Downloads</label>
+            <select name="bike" id="bike">
+              <option value="All Shots">All Shots</option>
+              <option value="ab">Adobe Illustrator</option>
+              <option value="abc">Adobe Photoshop</option>
+              <option value="abc">Adobe XD</option>
+              <option value="xyz">Figma</option>
+              <option value="xyz">Invision Studio</option>
+              <option value="xyz">Sketch</option>
+
+
+
+            </select>
+
+          </form>
+        </div>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+  </div>
+
+  <!-- rows with 4 column images  -->
+  <!-- first Row  -->
+
+  <div class="container">
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <!-- <i class="fa-solid fa-arrow-rotate-left"></i> -->
+          <img src="assests/row -1 - 1 img.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/1-1 icon.webp" alt="">
+            <h6>Bob Ewing<span class="badge">PRO</span></h6>
+
+          </div>
+
+          <div class="itm-two" style="margin-left: 80px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 69</span></i>
+            <i class="fa-solid fa-eye"><span> 20.4k</span></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row -1 - 2.webp" alt="">
+          <!-- <button class="btn btn-secondary" style="margin-top: -200px;">Case study</button> -->
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/1-2 icon.webp" alt="">
+            <h6>Vektora <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two" style="margin-left: 100px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 65 </span></i>
+            <i class="fa-solid fa-eye"><span> 5k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <video autoplay muted src="assests/WhatsApp Video 2023-01-29 at 2.39.04 PM (1).mp4"></video>
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/1-3-icon.webp" alt="">
+            <h6>Squaresp <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <h6>BOOSTED</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row -1 -4 img.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/1-4-icon.webp" alt="">
+            <h6>Andrew Alimbuy <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 47</span></i>
+            <i class="fa-solid fa-eye"><span> 9.9k</span></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- second Row  -->
+
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row - 2 -1.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/2-1 - icon.webp" alt="">
+            <h6>Leo Natsume  <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span>58</span> </i>
+            <i class="fa-solid fa-eye"><span> 8.4k</span></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row - 2- 2 img.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/2-2-icon.webp" alt="">
+            <h6>Kendrick Kidd <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 97</span></i>
+            <i class="fa-solid fa-eye"><span> 24.7k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-2 -3.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/2-3-icon.webp" alt="">
+            <h6>Unfold web <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 102</span></i>
+            <i class="fa-solid fa-eye"><span> 1.9k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row - 2 - 4.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/2-4-icon.webp" alt="">
+            <h6>Romain Trystrame <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span>67</span> </i>
+            <i class="fa-solid fa-eye"><span>7.1k</span> </i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Third Row  -->
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row -3-1.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/3-1-icon.webp" alt="">
+            <h6>Jordan Wilson <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 34</span></i>
+            <i class="fa-solid fa-eye"><span> 4.1k</span></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-3-2.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/3-2-icon.webp" alt="">
+            <h6>Purrweb UI/UX <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 309</span></i>
+            <i class="fa-solid fa-eye"><span> 17.7k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-3-3.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/3-3-icon.webp" alt="">
+            <h6>Halo Lab <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 344</span></i>
+            <i class="fa-solid fa-eye"><span> 43.5k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-3-4.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/3-4-icon.webp
+              " alt="">
+            <h6>Jordan Wilson <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 58 </span></i>
+            <i class="fa-solid fa-eye"><span> 12k </span></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Fourth Row  -->
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-4-1.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/4-1-icon.webp" alt="">
+            <h6>RH<span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two" style="margin-left: 120px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 43 </span></i>
+            <i class="fa-solid fa-eye"><span> 666k</span></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-4-2.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/4-2-icon.webp" alt="">
+            <h6>Denys Boldy <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 173 </span></i>
+            <i class="fa-solid fa-eye"><span> 8.71k </span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-4-3.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/4-3-icon.webp" alt="">
+            <h6>Zulal Ahmad <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two" style="margin-left: 85px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 25</span></i>
+            <i class="fa-solid fa-eye"><span> 2.2k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-4-4.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/4-4-icon.webp" alt="">
+            <h6>Wells Collins <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two" style="margin-left: 80px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 77</span></i>
+            <i class="fa-solid fa-eye"><span> 14.6k </span></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Fifth Row  -->
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <video autoplay muted src="assests/WhatsApp Video 2023-01-29 at 2.39.04 PM.mp4"></video>
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/5-1-icon.webp" alt="">
+            <h6>Squaresp<span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <h6>BOOSTED</h6>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row -5- 2.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/5-2-icon.webp" alt="">
+            <h6>Dimitrije Mikovik <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 119</span></i>
+            <i class="fa-solid fa-eye"><span> 25k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-5-3 img.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/5-3-icon.webp" alt="">
+            <h6> Fireart Studio <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 97</span></i>
+            <i class="fa-solid fa-eye"><span> 8.2k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row - 5 -4.webp" alt="">
+          <div class="overlay">Limitless-Creative
+
+            <i class="fa-solid fa-folder-plus"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/5-4-icon.webp" alt="">
+            <h6>Dmitri Litvinov <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 59</span></i>
+            <i class="fa-solid fa-eye"><span> 5.1k</span></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Sixth Row -->
+
+    <div class="row every-img">
+      <div class="col-lg-3 col-md-6  col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row - 6-1- img.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/6-1-icon.webp" alt="">
+            <h6>tubik.arts <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 63</span></i>
+            <i class="fa-solid fa-eye"><span> 8k</span></i>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row-6-2.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/6-2-icon.webp" alt="">
+            <h6>Yummygum <span class="badge ">TEAM</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 46</span></i>
+            <i class="fa-solid fa-eye"><span> 7.2k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd column  -->
+      <div class="col-lg-3 col-md-6  col-sm-12col-12">
+        <div class="box-card">
+          <img src="assests/row -6 -3.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/6-3-icon.webp" alt="">
+            <h6>IKAKO <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two" style="margin-left: 100px;">
+            <i class="fa-sharp fa-solid fa-heart"><span> 73</span></i>
+            <i class="fa-solid fa-eye"><span> 6.3k</span></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th column  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="box-card">
+          <img src="assests/row -6- 4.webp" alt="">
+        </div>
+        <div class="flex-display">
+          <div class="itm-one">
+            <img src="assests/6-4-icon.webp" alt="">
+            <h6>Aron leah <span class="badge ">PRO</span></h6>
+          </div>
+
+          <div class="itm-two">
+            <i class="fa-sharp fa-solid fa-heart"><span> 45</span></i>
+            <i class="fa-solid fa-eye"><span> 6.1k</span></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- buttons footer upper side  -->
+  <div class="container-fluid">
+    <div class="row pink-btn">
+      <div class="col-lg-3">
+
+      </div>
+      <div class="col-lg-6">
+
+        <button type="button" class="btn abc">Sign up to Continue</button>
+
+        <button type="button" class="btn signin">or sign in</button>
+
+
+      </div>
+      <div class="col-lg-3">
+        <img src="assests/icon-backtotop.png" alt="" onclick="topFunction()" id="myBtn" title="Go to top">
+        <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- footer part  -->
+  <div class="footer">
+    <div class="container">
+      <div class="row footer">
+        <div class="col-lg-2 col-md-12 col-12">
+          <h3>dribbble</h3>
+          <p>Dribbble is the world’s leading community for creatives to share, grow, and get hired.</p>
+          <i class="fa-sharp fa-solid fa-basketball"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+          <h6>for designers</h6>
+          <a href="#">
+            <pre>
+
+Go Pro!
+      
+Explore design work
+
+Design blog
+
+Overtime podcast
+
+Playoffs
+
+Weekly Warm-Up
+
+Refer a Friend
+
+Code of conduct
+
+      </pre>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+          <h6>Hire designers</h6>
+          <a href="#">
+            <pre>
+
+Post a job opening
+
+Post a freelance 
+
+project
+
+Search for designers
+
+<b style="color: #0d0c22;">Brands</b>
+
+Advertise with us
+          </pre>
+          </a>
+
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-6 ">
+          <h6>Company</h6>
+          <a href="#">
+            <pre>
+
+About
+
+Careers
+
+Support
+
+Media kit
+
+Testimonials
+
+API
+
+Terms of service
+
+Privacy policy
+
+Cookie policy
+          </pre>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+          <h6>Directories</h6>
+          <a href="#">
+            <pre>
+Design jobs
+
+Designers for hire
+
+Freelance designers 
+for hire
+
+Tags
+
+Places
+
+<b style="color: #0d0c22;">Design assets</b>
+
+Dribbble Marketplace
+
+Creative Market
+
+Fontspring
+
+Font Squirrel
+
+          </pre>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+          <h6>Design Resources</h6>
+          <a href="#">
+            <pre>
+
+Freelancing
+
+Design Hiring
+
+Design Portfolio
+
+Design Education
+
+Creative Process
+
+Design Industry 
+Trends
+          </pre>
+          </a>
+        </div>
+        <hr>
+
+
+        <div class="row abc">
+          <div class="col-lg-3 col-md-12 col-12">
+
+            <p>© 2023 Dribbble. All rights reserved.</p>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <img class="football" src="assests/dribbble-ball-icon-football footer.svg" alt="" style="height: 1.6em;">
+
+
+          </div>
+          <div class="col-lg-3 col-md-12 col-12 ">
+            <p style="margin-left: 65px;"><b> 20,516,693</b> shots dribbbled
+              <img class="ball" src="assests/dribbble-ball-icon-football footer.svg" alt="" style="height: 1.6em;">
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+  </script>
+</body>
+
+</html>
